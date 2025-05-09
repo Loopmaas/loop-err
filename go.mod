@@ -1,4 +1,4 @@
-module github.com/Loopmaas/loop_err
+module github.com/Loopmaas/loop-err
 
 go 1.24.0
 

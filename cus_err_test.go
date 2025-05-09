@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	internal "github.com/Loopmaas/loop_err/internal/gen"
+	internal "github.com/Loopmaas/loop-err/internal/gen"
 
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc/codes"

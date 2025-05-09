@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	internal "github.com/Loopmaas/loop_err/internal/gen"
+	internal "github.com/Loopmaas/loop-err/internal/gen"
 
 	"google.golang.org/grpc/status"
 )
