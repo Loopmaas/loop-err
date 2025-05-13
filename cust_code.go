@@ -18,7 +18,7 @@ const (
 	//InvalidArgument
 
 	// 400 status code from here
-	InvalidArgument = 400_0000 // 帳號錯誤
+	BadRequest = 400_0000 // 請求錯誤
 	// AccountPasswordError    = 400_0001 // 密碼錯誤
 
 	// 401 status code from here
