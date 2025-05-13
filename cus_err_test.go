@@ -20,7 +20,7 @@ func TestCusCodeHttpCode(t *testing.T) {
 		expected int
 	}{
 		{"OK", OK, http.StatusOK},
-		{"BadRequest", AccountError, http.StatusBadRequest},
+		{"BadRequest", InvalidArgument, http.StatusBadRequest},
 		{"Unauthorized", Unauthorized, http.StatusUnauthorized},
 		{"StatusNotFound", ResponseNotFound, http.StatusNotFound},
 		{"InternalServerError", InternalServerError, http.StatusInternalServerError},
@@ -37,15 +37,15 @@ func TestCusCodeHttpCode(t *testing.T) {
 
 // TestNewCusError tests the New function for creating CusError
 func TestNewCusError(t *testing.T) {
-	err := New(AccountError, "test error")
-	assert.Equal(t, AccountError, err.Code().Int())
+	err := New(InvalidArgument, "test error")
+	assert.Equal(t, InvalidArgument, err.Code().Int())
 	assert.Equal(t, "test error", err.Message())
 	assert.Nil(t, err.Data())
 	assert.Empty(t, err.Unwrap())
 
 	sourceErr := errors.New("source error")
-	err = New(AccountError, "test error", sourceErr)
-	assert.Equal(t, AccountError, err.Code().Int())
+	err = New(InvalidArgument, "test error", sourceErr)
+	assert.Equal(t, InvalidArgument, err.Code().Int())
 	assert.Equal(t, "test error", err.Message())
 	assert.Nil(t, err.Data())
 	assert.Equal(t, []error{sourceErr}, err.Unwrap())
@@ -53,17 +53,17 @@ func TestNewCusError(t *testing.T) {
 
 // TestCusErrorError tests the Error method of CusError
 func TestCusErrorError(t *testing.T) {
-	err := New(AccountError, "test error")
+	err := New(InvalidArgument, "test error")
 	assert.Equal(t, "cusCode: 4000000, msg:test error", err.Error())
 
 	sourceErr := errors.New("source error")
-	err = New(AccountError, "test error", sourceErr)
+	err = New(InvalidArgument, "test error", sourceErr)
 	assert.Equal(t, "cusCode: 4000000, msg:test error,  sources: [source error]", err.Error())
 }
 
 // TestCusErrorHttpCode tests the HttpCode method of CusError
 func TestCusErrorHttpCode(t *testing.T) {
-	err := New(AccountError, "test error")
+	err := New(InvalidArgument, "test error")
 	assert.Equal(t, http.StatusBadRequest, err.HttpCode())
 
 	var nilErr *CusError
@@ -73,14 +73,14 @@ func TestCusErrorHttpCode(t *testing.T) {
 // TestCusErrorWithData tests the WithData method of CusError
 func TestCusErrorWithData(t *testing.T) {
 	data := map[string]string{"key": "value"}
-	err := New(AccountError, "test error").WithData(data)
+	err := New(InvalidArgument, "test error").WithData(data)
 	assert.Equal(t, data, err.Data())
 }
 
 // TestCusErrorIs tests the Is method of CusError
 func TestCusErrorIs(t *testing.T) {
-	err1 := New(AccountError, "test error")
-	err2 := New(AccountError, "another test error")
+	err1 := New(InvalidArgument, "test error")
+	err2 := New(InvalidArgument, "another test error")
 	err3 := New(Unauthorized, "unauthorized error")
 
 	assert.True(t, err1.Is(err2))
@@ -91,7 +91,7 @@ func TestCusErrorIs(t *testing.T) {
 // TestCusErrorWithSource tests the WithSource method of CusError
 func TestCusErrorWithSource(t *testing.T) {
 	sourceErr := errors.New("source error")
-	err := New(AccountError, "test error").WithSource(sourceErr)
+	err := New(InvalidArgument, "test error").WithSource(sourceErr)
 	assert.Equal(t, []error{sourceErr}, err.Unwrap())
 }
 
