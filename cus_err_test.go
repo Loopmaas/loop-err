@@ -22,7 +22,7 @@ func TestCusCodeHttpCode(t *testing.T) {
 		{"OK", OK, http.StatusOK},
 		{"BadRequest", BadRequest, http.StatusBadRequest},
 		{"Unauthorized", Unauthorized, http.StatusUnauthorized},
-		{"StatusNotFound", ResponseNotFound, http.StatusNotFound},
+		{"StatusNotFound", NotFound, http.StatusNotFound},
 		{"InternalServerError", InternalServerError, http.StatusInternalServerError},
 		{"NotImplemented", NotImplemented, http.StatusNotImplemented},
 		{"InvalidCode", 999_9999, http.StatusInternalServerError},
