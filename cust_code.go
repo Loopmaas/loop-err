@@ -21,7 +21,10 @@ const (
 	// 400 status code from here
 	BadRequest = 400_0000 // 請求錯誤
 	// AccountPasswordError    = 400_0001 // 密碼錯誤
-
+	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
+	PromotionSerialFetchAllDone                       = 400_0603 // 推廣序號已被領取完
+	PromotionSerialExpired                            = 400_0604 // 推廣序號已過期
+	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_0605 // 帳號資格不符合平台首用限制
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
 	// UnusualLogin       = 401_0001 // 登入異常
