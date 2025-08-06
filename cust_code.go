@@ -21,8 +21,13 @@ const (
 	// 400 status code from here
 	BadRequest = 400_0000 // 請求錯誤
 	// AccountPasswordError    = 400_0001 // 密碼錯誤
-	NotAllowChangeOrderTime                           = 40002001 //不允許修改訂單時間
-	NotAllowSmallerOriginOrderTime                    = 40002002 // 修改時間不可小於原訂單時間
+	NotAllowChangeOrderTime        = 40002001 //不允許修改訂單時間
+	NotAllowSmallerOriginOrderTime = 40002002 // 修改時間不可小於原訂單時間
+
+	PaymentUnprocessed = 400_02101 // 訂單款項未付款
+	PaymentProcessing  = 400_02102 // 訂單款項處理中
+	PaymentFailed      = 400_02103 // 訂單款項付款失敗
+
 	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
 	PromotionSerialFetchAllDone                       = 400_0603 // 推廣序號已被領取完
 	PromotionSerialExpired                            = 400_0604 // 推廣序號已過期
