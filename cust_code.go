@@ -68,9 +68,15 @@ const (
 
 // HttpCode returns the standard HTTP status code.
 func (c CusCode) HttpCode() int {
+	var httpCode int
 
 	// Get the http code from the CusCode
-	httpCode := int(c) / 10000
+	// temporary fix: since there is a legacy typo, code should be 8 digits long but 7 digits version was already released
+	if 100_00000 < c && c < 999_99999 {
+		httpCode = int(c) / 1_00000
+	} else {
+		httpCode = int(c) / 1_0000
+	}
 
 	// Check if the http code is valid
 	if http.StatusText(httpCode) == "" {
