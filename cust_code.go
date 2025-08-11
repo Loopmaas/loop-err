@@ -50,6 +50,9 @@ const (
 	Conflict = 409_0000 // 衝突
 	// ResourceIsExist = 409_0001 // 資源已存在
 
+	// 422 status code from here
+	UnprocessableEntity = 422_00000 // 參數錯誤
+
 	// 429 status code from here
 	TooManyRequests = 429_0000 // 請求過多
 
