@@ -29,6 +29,8 @@ const (
 	PaymentFailed        = 400_02103 // 訂單款項付款失敗
 	NoUnpayOrderLineItem = 400_02104 //無可付款訂單
 
+	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
+
 	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
 	PromotionSerialFetchAllDone                       = 400_0603 // 推廣序號已被領取完
 	PromotionSerialExpired                            = 400_0604 // 推廣序號已過期
