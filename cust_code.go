@@ -62,6 +62,7 @@ const (
 	// 500 status code from here
 	InternalServerError = 500_0000 // 内部錯誤
 	// InvalidPermission   = 500_0001 // 無效的權限
+	UnrecognizableCaptcha = 500_11001 // 無法辨識驗證碼
 
 	// 501 status code from here
 	NotImplemented = 501_0000 // 功能未實現
