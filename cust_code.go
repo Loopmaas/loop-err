@@ -54,7 +54,8 @@ const (
 	// ResourceIsExist = 409_0001 // 資源已存在
 
 	// 422 status code from here
-	UnprocessableEntity = 422_00000 // 參數錯誤
+	UnprocessableEntity        = 422_00000 // 參數錯誤
+	CustomerStatusNoteRequired = 422_01001 // 客戶狀態備註必填
 
 	// 429 status code from here
 	TooManyRequests = 429_0000 // 請求過多
