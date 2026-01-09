@@ -38,7 +38,6 @@ const (
 
 	VehicleModelClosed = 400_0701 //車款已關閉
 
-	NotAlolowed = 400_0606 // 不允許的操作
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
 	// UnusualLogin       = 401_0001 // 登入異常
