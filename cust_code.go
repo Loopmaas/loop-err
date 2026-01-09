@@ -36,6 +36,8 @@ const (
 	PromotionSerialExpired                            = 400_0604 // 推廣序號已過期
 	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_0605 // 帳號資格不符合平台首用限制
 
+	VehicleModelClosed = 400_0701 //車款已關閉
+
 	NotAlolowed = 400_0606 // 不允許的操作
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
