@@ -40,6 +40,9 @@ const (
 	VehicleModelClosed = 400_0701 //車款已關閉
 	VehicldHadOrder    = 400_0702 // 車輛已被訂單
 	VehicleClosed      = 400_0703 // 車輛已停用
+
+	VehicleHadDownTime = 400_0801 //車輛自用時間重疊
+
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
 	// UnusualLogin       = 401_0001 // 登入異常
