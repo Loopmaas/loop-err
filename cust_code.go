@@ -14,8 +14,9 @@ type CusCode int
 
 const (
 	// 200 status code from here
-	OK        = 200_0000 // 成功
-	NoContent = 204_0000 // 成功但是無資料
+	OK        = 200_0000  // 成功
+	Created   = 201_00000 // 創建成功
+	NoContent = 204_0000  // 成功不返回資訊
 	//InvalidArgument
 
 	// 400 status code from here
