@@ -28,7 +28,7 @@ const (
 	PaymentUnprocessed   = 400_02101 // 訂單款項未付款
 	PaymentProcessing    = 400_02102 // 訂單款項處理中
 	PaymentFailed        = 400_02103 // 訂單款項付款失敗
-	NoUnpayOrderLineItem = 400_02104 //無可付款訂單
+	NoUnPayOrderLineItem = 400_02104 //無可付款訂單
 	OrderStatusInvalid   = 400_02201 // 訂單狀態限制不可操作
 
 	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
@@ -39,7 +39,7 @@ const (
 	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_0605 // 帳號資格不符合平台首用限制
 
 	VehicleModelClosed = 400_0701 //車款已關閉
-	VehicldHadOrder    = 400_0702 // 車輛已被訂單
+	VehicleHadOrder    = 400_0702 // 車輛已被訂單
 	VehicleClosed      = 400_0703 // 車輛已停用
 
 	VehicleHadDownTime = 400_0801 //車輛自用時間重疊
