@@ -42,7 +42,7 @@ const (
 	VehicleHadOrder    = 400_0702 // 車輛已被訂單
 	VehicleClosed      = 400_0703 // 車輛已停用
 
-	VehicleHadDownTime          = 400_0801   //車輛自用時間重疊
+	// 訂單
 	VehicleOrderTimeOverlap     = 400_10_002 // 車輛訂單時間重疊
 	VehicleOrderDownTimeOverlap = 400_10_003 // 車輛訂單自用時間重疊
 
