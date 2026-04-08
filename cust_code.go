@@ -46,6 +46,13 @@ const (
 	VehicleOrderTimeOverlap     = 400_10_002 // 車輛訂單時間重疊
 	VehicleOrderDownTimeOverlap = 400_10_003 // 車輛訂單自用時間重疊
 
+	IdentificationIsUnrecognizedByAI                               = 400_11_001 // AI拒絕該證件
+	IdentificationHasInvalidBirthDate                              = 400_11_002 // 證件出生日期格式錯誤
+	IdentificationHasInvalidIssuedDate                             = 400_11_003 // 證件發行日期格式錯誤
+	IdentificationHasInvalidExpiredDate                            = 400_11_004 // 證件有效日期格式錯誤
+	IdentificationHasInvalidIDNumber                               = 400_11_005 // 證件編號格式錯誤
+	IdentificationUploadIsNotAllowedWhileUnfulfilledOrderUndergoes = 400_11_006 // 有未完成訂單時，不可上傳證件
+
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
 	// UnusualLogin       = 401_0001 // 登入異常
