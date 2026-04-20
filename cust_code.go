@@ -31,7 +31,7 @@ const (
 	NoUnPayOrderLineItem = 400_02104 //無可付款訂單
 	OrderStatusInvalid   = 400_02201 // 訂單狀態限制不可操作
 
-	ConsignContractEndedAtSmallerStart = 400_04_001 // 合約結束時間小於開始時間
+	ConsignContractEndedAtSmallerStartedAt = 400_04_001 // 合約結束時間小於開始時間
 
 	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
 
