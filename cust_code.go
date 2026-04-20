@@ -32,6 +32,7 @@ const (
 	OrderStatusInvalid   = 400_02201 // 訂單狀態限制不可操作
 
 	ConsignContractEndedAtSmallerStartedAt = 400_04_001 // 合約結束時間小於開始時間
+	InvalidConsignContractStartedAt        = 400_04_002 //新合約開始時間不等於就有合約結束時間+1
 
 	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
 
