@@ -35,7 +35,7 @@ const (
 	ConsignContractEndedAtSmallerStartedAt = 400_04_001 // 合約結束時間小於開始時間
 	InvalidConsignContractStartedAt        = 400_04_002 //新合約開始時間不等於就有合約結束時間+1
 	ConsignContractIsChanged               = 400_04_003 //合約已被更新
-	NotCurrentUsefulConsignContract        = 400_04_004 // 非當前有效合約
+	NonCurrentlyValidConsignContract       = 400_04_004 // 非當前有效合約
 	ConsignContractIsSuspended             = 400_04_005 //合約已停用
 
 	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
