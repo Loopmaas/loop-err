@@ -63,6 +63,10 @@ const (
 	IdentificationHasInvalidIDNumber                               = 400_11_005 // 證件編號格式錯誤
 	IdentificationUploadIsNotAllowedWhileUnfulfilledOrderUndergoes = 400_11_006 // 有未完成訂單時，不可上傳證件
 
+	ETCLoginFailure            = 400_12_001 // 遠通ETC登入失敗
+	ETCIncorrectLicensePlateNo = 400_12_002 // 遠通ETC查無車牌
+	ETCOrdered                 = 400_12_003 // 遠通ETC車輛已有其他訂單
+
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
 	// UnusualLogin       = 401_0001 // 登入異常
