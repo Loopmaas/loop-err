@@ -66,6 +66,7 @@ const (
 	ETCLoginFailure            = 400_12_001 // 遠通ETC登入失敗
 	ETCIncorrectLicensePlateNo = 400_12_002 // 遠通ETC查無車牌
 	ETCOrdered                 = 400_12_003 // 遠通ETC車輛已有其他訂單
+	ETCOrderExist              = 400_12_004 // 遠通ETC已有租車紀錄
 
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
