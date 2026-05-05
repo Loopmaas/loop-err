@@ -39,6 +39,7 @@ const (
 	ConsignContractIsSuspended             = 400_04_005 //合約已停用
 	HasNextContractLostContractDate        = 400_04_006 //有續租合約卻沒有帶續租合約的開始或結束時間
 	NextContractStartTimeNotEqualRule      = 400_04_007 // 續租合約的開始時間不符合規則
+	AlreadyRenewContract                   = 400_04_008 //已有續約合約
 
 	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
 
