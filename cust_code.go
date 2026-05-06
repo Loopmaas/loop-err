@@ -68,6 +68,8 @@ const (
 	ETCIncorrectLicensePlateNo = 400_12_002 // 遠通ETC查無車牌
 	ETCOrdered                 = 400_12_003 // 遠通ETC車輛已有其他訂單
 	ETCOrderExist              = 400_12_004 // 遠通ETC已有租車紀錄
+	ETCOrderedDuplicateOrderNo = 400_12_005 // 遠通ETC車輛重複訂單編號
+	ETCOrderedOverlapPeriod    = 400_12_006 // 遠通ETC車輛重疊租賃時間
 
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
