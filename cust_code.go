@@ -81,7 +81,8 @@ const (
 	// NoPermission = 403_0001 // 沒有權限
 
 	// 404 status code from here
-	NotFound = 404_0000 // 沒有Response
+	NotFound            = 404_0000   // 沒有Response
+	ConsignTermNotFound = 404_08_001 // 查不到分潤合約
 	// ResourceNotFound = 404_0001 // 找不到資源
 
 	// 409 status code from here
