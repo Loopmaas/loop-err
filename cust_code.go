@@ -25,6 +25,7 @@ const (
 	NotAllowChangeOrderTime        = 400_02001 //不允許修改訂單時間
 	NotAllowSmallerOriginOrderTime = 400_02002 // 修改時間不可小於原訂單時間
 
+	// 支付相關錯誤碼
 	PaymentUnprocessed   = 400_02101 // 訂單款項未付款
 	PaymentProcessing    = 400_02102 // 訂單款項處理中
 	PaymentFailed        = 400_02103 // 訂單款項付款失敗
@@ -43,21 +44,23 @@ const (
 	ContractEndConflict                    = 400_04_009 // 合約結束時間還有訂單沒結束
 
 	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
-
+	// 優惠卷
 	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
 	PromotionSerialFetchAllDone                       = 400_0603 // 推廣序號已被領取完
 	PromotionSerialExpired                            = 400_0604 // 推廣序號已過期
 	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_0605 // 帳號資格不符合平台首用限制
 
+	// 車輛
 	VehicleModelClosed = 400_0701 //車款已關閉
 	VehicleHadOrder    = 400_0702 // 車輛已被訂單
 	VehicleClosed      = 400_0703 // 車輛已停用
+	VehicleNotOnShelf  = 400_0704 // 車輛未上架
 
 	// 訂單
 	VehicleOrderTimeOverlap                          = 400_10_002 // 車輛訂單時間重疊
 	VehicleOrderDownTimeOverlap                      = 400_10_003 // 車輛訂單自用時間重疊
 	ChangeOrderDeliveryAndReturnNotInConsignContract = 400_10_004 // 異動車輛時間不符合車輛合約
-
+	// 證件
 	IdentificationIsUnrecognizedByAI                               = 400_11_001 // AI拒絕該證件
 	IdentificationHasInvalidBirthDate                              = 400_11_002 // 證件出生日期格式錯誤
 	IdentificationHasInvalidIssuedDate                             = 400_11_003 // 證件發行日期格式錯誤
@@ -65,6 +68,7 @@ const (
 	IdentificationHasInvalidIDNumber                               = 400_11_005 // 證件編號格式錯誤
 	IdentificationUploadIsNotAllowedWhileUnfulfilledOrderUndergoes = 400_11_006 // 有未完成訂單時，不可上傳證件
 
+	//ETC
 	ETCLoginFailure            = 400_12_001 // 遠通ETC登入失敗
 	ETCIncorrectLicensePlateNo = 400_12_002 // 遠通ETC查無車牌
 	ETCOrdered                 = 400_12_003 // 遠通ETC車輛已有其他訂單
