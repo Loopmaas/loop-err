@@ -60,6 +60,7 @@ const (
 	VehicleOrderTimeOverlap                          = 400_10_002 // 車輛訂單時間重疊
 	VehicleOrderDownTimeOverlap                      = 400_10_003 // 車輛訂單自用時間重疊
 	ChangeOrderDeliveryAndReturnNotInConsignContract = 400_10_004 // 異動車輛時間不符合車輛合約
+	OrderHasDepositNotPayed                          = 400_10_005 // 訂單有訂金未付款
 	// 證件
 	IdentificationIsUnrecognizedByAI                               = 400_11_001 // AI拒絕該證件
 	IdentificationHasInvalidBirthDate                              = 400_11_002 // 證件出生日期格式錯誤
