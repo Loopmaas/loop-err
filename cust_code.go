@@ -77,6 +77,9 @@ const (
 	ETCOrderedDuplicateOrderNo = 400_12_005 // 遠通ETC車輛重複訂單編號
 	ETCOrderedOverlapPeriod    = 400_12_006 // 遠通ETC車輛重疊租賃時間
 
+	// Rating
+	RatingStatusTransitionInvalid = 400_13_001 // 評價狀態轉換不合法
+
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
 	// UnusualLogin       = 401_0001 // 登入異常
