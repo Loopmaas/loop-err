@@ -44,8 +44,8 @@ const (
 	ContractEndConflict                    = 400_04_009 // 合約結束時間還有訂單沒結束
 
 	// Location
-	LocationNoPostalCode             = 400_05001  // 無法取得位置的郵遞區號
-	LocationCannotUseDefaultLocation = 400_05_002 // 無法使用預設位置
+	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
+
 	// 優惠卷
 	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
 	PromotionSerialFetchAllDone                       = 400_0603 // 推廣序號已被領取完
@@ -53,10 +53,11 @@ const (
 	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_0605 // 帳號資格不符合平台首用限制
 
 	// 車輛
-	VehicleModelClosed = 400_0701 //車款已關閉
-	VehicleHadOrder    = 400_0702 // 車輛已被訂單
-	VehicleClosed      = 400_0703 // 車輛已停用
-	VehicleNotOnShelf  = 400_0704 // 車輛未上架
+	VehicleModelClosed         = 400_0701 //車款已關閉
+	VehicleHadOrder            = 400_0702 // 車輛已被訂單
+	VehicleClosed              = 400_0703 // 車輛已停用
+	VehicleNotOnShelf          = 400_0704 // 車輛未上架
+	VehicleHighlightedNotFound = 400_0705 // 車輛精選不存在
 
 	// 訂單
 	VehicleOrderTimeOverlap                          = 400_10_002 // 車輛訂單時間重疊
