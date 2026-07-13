@@ -43,7 +43,9 @@ const (
 	AlreadyRenewContract                   = 400_04_008 //已有續約合約
 	ContractEndConflict                    = 400_04_009 // 合約結束時間還有訂單沒結束
 
-	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
+	// Location
+	LocationNoPostalCode             = 400_05001  // 無法取得位置的郵遞區號
+	LocationCannotUseDefaultLocation = 400_05_002 // 無法使用預設位置
 	// 優惠卷
 	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
 	PromotionSerialFetchAllDone                       = 400_0603 // 推廣序號已被領取完
