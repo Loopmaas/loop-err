@@ -45,6 +45,7 @@ const (
 
 	// Location
 	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
+	LocationIsDisabled   = 400_05002 // 該位置已停用
 
 	// 優惠卷
 	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
