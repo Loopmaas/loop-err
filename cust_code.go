@@ -96,6 +96,7 @@ const (
 	// 404 status code from here
 	NotFound            = 404_0000   // 沒有Response
 	ConsignTermNotFound = 404_08_001 // 查不到分潤合約
+	NoTransactionTask   = 404_14_001 // 沒有待處理的付款領域工作事項
 	// ResourceNotFound = 404_0001 // 找不到資源
 
 	// 409 status code from here
