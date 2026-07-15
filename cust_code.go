@@ -84,6 +84,7 @@ const (
 	// Rating
 	RatingStatusTransitionInvalid = 400_13_001 // 評價狀態轉換不合法
 	NegativeRatingMustTagOrText   = 400_13_002 // 負面評價至少需要Tag或文字
+	OverRattingTextLimit          = 400_13_003 // 超過評價文字長度限制
 	// 401 status code from here
 	Unauthorized = 401_0000 // 未授權
 	// UnusualLogin       = 401_0001 // 登入異常
