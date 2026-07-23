@@ -65,6 +65,7 @@ const (
 	VehicleOrderDownTimeOverlap                      = 400_10_003 // 車輛訂單自用時間重疊
 	ChangeOrderDeliveryAndReturnNotInConsignContract = 400_10_004 // 異動車輛時間不符合車輛合約
 	OrderHasDepositNotPayed                          = 400_10_005 // 訂單有訂金未付款
+
 	// 證件
 	IdentificationIsUnrecognizedByAI                               = 400_11_001 // AI拒絕該證件
 	IdentificationHasInvalidBirthDate                              = 400_11_002 // 證件出生日期格式錯誤
@@ -72,6 +73,7 @@ const (
 	IdentificationHasInvalidExpiredDate                            = 400_11_004 // 證件有效日期格式錯誤
 	IdentificationHasInvalidIDNumber                               = 400_11_005 // 證件編號格式錯誤
 	IdentificationUploadIsNotAllowedWhileUnfulfilledOrderUndergoes = 400_11_006 // 有未完成訂單時，不可上傳證件
+	MustUploadDrivingLicenseForResidentCertificateUser             = 400_11_010 // 居留證用戶需上傳駕照
 
 	//ETC
 	ETCLoginFailure            = 400_12_001 // 遠通ETC登入失敗
