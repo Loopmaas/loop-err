@@ -26,11 +26,12 @@ const (
 	NotAllowSmallerOriginOrderTime = 400_02002 // 修改時間不可小於原訂單時間
 
 	// 支付相關錯誤碼
-	PaymentUnprocessed   = 400_02101 // 訂單款項未付款
-	PaymentProcessing    = 400_02102 // 訂單款項處理中
-	PaymentFailed        = 400_02103 // 訂單款項付款失敗
-	NoUnPayOrderLineItem = 400_02104 //無可付款訂單
-	OrderStatusInvalid   = 400_02201 // 訂單狀態限制不可操作
+	PaymentUnprocessed             = 400_02_101 // 訂單款項未付款
+	PaymentProcessing              = 400_02_102 // 訂單款項處理中
+	PaymentFailed                  = 400_02_103 // 訂單款項付款失敗
+	NoUnPayOrderLineItem           = 400_02_104 //無可付款訂單
+	OrderStatusInvalid             = 400_02_201 // 訂單狀態限制不可操作
+	NoUnpaidOrderLineItemOrDeposit = 400_02_300 // 無可付款費用項目或押金項目
 
 	// 合約
 	ConsignContractEndedAtSmallerStartedAt = 400_04_001 // 合約結束時間小於開始時間
