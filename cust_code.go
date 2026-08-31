@@ -105,7 +105,9 @@ const (
 
 	// 409 status code from here
 	Conflict = 409_0000 // 衝突
-	// ResourceIsExist = 409_0001 // 資源已存在
+
+	// Content
+	ContentVersionConflict = 409_09_001 // 內容版本衝突（提交的 version 與現況不符，需重新載入）
 
 	// 422 status code from here
 	UnprocessableEntity        = 422_00000 // 參數錯誤
