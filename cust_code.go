@@ -128,6 +128,7 @@ const (
 	ServiceUnavailable     = 503_00000
 	ServiceInMaintenance   = 503_00001 // 服務維護中
 	ServiceForciblyUpdated = 503_00002 // 強迫更新軟體版本，例如APP
+	ServiceSoftlyUpdated   = 503_00003 // 推薦更新軟體版本，例如APP
 )
 
 // HttpCode returns the standard HTTP status code.
