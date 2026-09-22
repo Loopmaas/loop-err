@@ -14,16 +14,16 @@ type CusCode int
 
 const (
 	// 200 status code from here
-	OK        = 200_0000  // 成功
-	Created   = 201_00000 // 創建成功
-	NoContent = 204_0000  // 成功不返回資訊
+	OK        = 200_00_00  // 成功
+	Created   = 201_00_000 // 創建成功
+	NoContent = 204_00_00  // 成功不返回資訊
 	//InvalidArgument
 
 	// 400 status code from here
-	BadRequest = 400_0000 // 請求錯誤
+	BadRequest = 400_00_00 // 請求錯誤
 	// AccountPasswordError    = 400_0001 // 密碼錯誤
-	NotAllowChangeOrderTime        = 400_02001 //不允許修改訂單時間
-	NotAllowSmallerOriginOrderTime = 400_02002 // 修改時間不可小於原訂單時間
+	NotAllowChangeOrderTime        = 400_02_001 //不允許修改訂單時間
+	NotAllowSmallerOriginOrderTime = 400_02_002 // 修改時間不可小於原訂單時間
 
 	// 支付相關錯誤碼
 	PaymentUnprocessed             = 400_02_101 // 訂單款項未付款
@@ -45,21 +45,21 @@ const (
 	ContractEndConflict                    = 400_04_009 // 合約結束時間還有訂單沒結束
 
 	// Location
-	LocationNoPostalCode = 400_05001 // 無法取得位置的郵遞區號
-	LocationIsDisabled   = 400_05002 // 該位置已停用
+	LocationNoPostalCode = 400_05_001 // 無法取得位置的郵遞區號
+	LocationIsDisabled   = 400_05_002 // 該位置已停用
 
 	// 優惠卷
-	PromotionSerialAlreadyFetched                     = 400_0602 // 推廣序號已被使用
-	PromotionSerialFetchAllDone                       = 400_0603 // 推廣序號已被領取完
-	PromotionSerialExpired                            = 400_0604 // 推廣序號已過期
-	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_0605 // 帳號資格不符合平台首用限制
+	PromotionSerialAlreadyFetched                     = 400_06_02 // 推廣序號已被使用
+	PromotionSerialFetchAllDone                       = 400_06_03 // 推廣序號已被領取完
+	PromotionSerialExpired                            = 400_06_04 // 推廣序號已過期
+	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_06_05 // 帳號資格不符合平台首用限制
 
 	// 車輛
-	VehicleModelClosed         = 400_0701 //車款已關閉
-	VehicleHadOrder            = 400_0702 // 車輛已被訂單
-	VehicleClosed              = 400_0703 // 車輛已停用
-	VehicleNotOnShelf          = 400_0704 // 車輛未上架
-	VehicleHighlightedNotFound = 400_0705 // 車輛精選不存在
+	VehicleModelClosed         = 400_07_01 //車款已關閉
+	VehicleHadOrder            = 400_07_02 // 車輛已被訂單
+	VehicleClosed              = 400_07_03 // 車輛已停用
+	VehicleNotOnShelf          = 400_07_04 // 車輛未上架
+	VehicleHighlightedNotFound = 400_07_05 // 車輛精選不存在
 
 	// 訂單
 	VehicleOrderTimeOverlap                          = 400_10_002 // 車輛訂單時間重疊
@@ -90,45 +90,46 @@ const (
 	OverRattingTextLimit          = 400_13_003 // 超過評價文字長度限制
 	RepairCannotRating            = 400_13_004 // 有車損不能評價
 	// 401 status code from here
-	Unauthorized = 401_0000 // 未授權
-	// UnusualLogin       = 401_0001 // 登入異常
+	Unauthorized = 401_00_00 // 未授權
+	// UnusualLogin       = 401_00_01 // 登入異常
 
 	// 403 status code from here
-	Forbidden = 403_0000 // 禁止訪問
-	// NoPermission = 403_0001 // 沒有權限
+	Forbidden = 403_00_00 // 禁止訪問
+	// NoPermission = 403_00_01 // 沒有權限
 
 	// 404 status code from here
-	NotFound            = 404_0000   // 沒有Response
+	NotFound            = 404_00_00  // 沒有Response
 	ConsignTermNotFound = 404_08_001 // 查不到分潤合約
 	NoTransactionTask   = 404_14_001 // 沒有待處理的付款工作
 	// ResourceNotFound = 404_0001 // 找不到資源
 
 	// 409 status code from here
-	Conflict = 409_0000 // 衝突
+	Conflict               = 409_00_00  // 衝突
+	PaymentProcessConflict = 409_14_001 // 該訂單的付款工作已被其他進程捕獲
 
 	// Content
 	ContentVersionConflict = 409_09_001 // 內容版本衝突（提交的 version 與現況不符，需重新載入）
 
 	// 422 status code from here
-	UnprocessableEntity        = 422_00000 // 參數錯誤
-	CustomerStatusNoteRequired = 422_01001 // 客戶狀態備註必填
+	UnprocessableEntity        = 422_00_000 // 參數錯誤
+	CustomerStatusNoteRequired = 422_01_001 // 客戶狀態備註必填
 
 	// 429 status code from here
-	TooManyRequests = 429_0000 // 請求過多
+	TooManyRequests = 429_00_00 // 請求過多
 
 	// 500 status code from here
-	InternalServerError = 500_0000 // 内部錯誤
-	// InvalidPermission   = 500_0001 // 無效的權限
-	UnrecognizableCaptcha = 500_11001 // 無法辨識驗證碼
+	InternalServerError = 500_00_00 // 内部錯誤
+	// InvalidPermission   = 500_00_01 // 無效的權限
+	UnrecognizableCaptcha = 500_11_001 // 無法辨識驗證碼
 
 	// 501 status code from here
-	NotImplemented = 501_0000 // 功能未實現
+	NotImplemented = 501_00_00 // 功能未實現
 
 	// 503
-	ServiceUnavailable     = 503_00000
-	ServiceInMaintenance   = 503_00001 // 服務維護中
-	ServiceForciblyUpdated = 503_00002 // 強迫更新軟體版本，例如APP
-	ServiceSoftlyUpdated   = 503_00003 // 推薦更新軟體版本，例如APP
+	ServiceUnavailable     = 503_00_000
+	ServiceInMaintenance   = 503_00_001 // 服務維護中
+	ServiceForciblyUpdated = 503_00_002 // 強迫更新軟體版本，例如APP
+	ServiceSoftlyUpdated   = 503_00_003 // 推薦更新軟體版本，例如APP
 )
 
 // HttpCode returns the standard HTTP status code.
