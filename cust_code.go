@@ -31,7 +31,7 @@ const (
 	PaymentFailed                  = 400_02_103 // 訂單款項付款失敗
 	NoUnPayOrderLineItem           = 400_02_104 //無可付款訂單
 	OrderStatusInvalid             = 400_02_201 // 訂單狀態限制不可操作
-	NoUnpaidOrderLineItemOrDeposit = 400_02_300 // 無可付款費用項目或押金項目
+	NoUnpaidOrderLineItemOrDeposit = 400_02_300 // 無須付款費用項目或押金項目
 
 	// 合約
 	ConsignContractEndedAtSmallerStartedAt = 400_04_001 // 合約結束時間小於開始時間
@@ -100,7 +100,7 @@ const (
 	// 404 status code from here
 	NotFound            = 404_0000   // 沒有Response
 	ConsignTermNotFound = 404_08_001 // 查不到分潤合約
-	NoTransactionTask   = 404_14_001 // 沒有待處理的付款領域工作事項
+	NoTransactionTask   = 404_14_001 // 沒有待處理的付款工作
 	// ResourceNotFound = 404_0001 // 找不到資源
 
 	// 409 status code from here
