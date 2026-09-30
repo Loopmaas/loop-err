@@ -55,11 +55,12 @@ const (
 	PromotionSerialAccountNotMatchForPlatformFirstUse = 400_06_05 // 帳號資格不符合平台首用限制
 
 	// 車輛
-	VehicleModelClosed         = 400_07_01 //車款已關閉
-	VehicleHadOrder            = 400_07_02 // 車輛已被訂單
-	VehicleClosed              = 400_07_03 // 車輛已停用
-	VehicleNotOnShelf          = 400_07_04 // 車輛未上架
-	VehicleHighlightedNotFound = 400_07_05 // 車輛精選不存在
+	VehicleModelClosed                      = 400_07_01  //車款已關閉
+	VehicleHadOrder                         = 400_07_02  // 車輛已被訂單
+	VehicleClosed                           = 400_07_03  // 車輛已停用
+	VehicleNotOnShelf                       = 400_07_04  // 車輛未上架
+	VehicleHighlightedNotFound              = 400_07_05  // 車輛精選不存在
+	VehicleLocationsCopyConflictOnPickupFee = 400_07_010 // 套用車輛站點設定時，取還車服務費衝突
 
 	// 訂單
 	VehicleOrderTimeOverlap                          = 400_10_002 // 車輛訂單時間重疊
