@@ -61,6 +61,7 @@ const (
 	VehicleNotOnShelf                       = 400_07_04  // 車輛未上架
 	VehicleHighlightedNotFound              = 400_07_05  // 車輛精選不存在
 	VehicleLocationsCopyConflictOnPickupFee = 400_07_010 // 套用車輛站點設定時，取還車服務費衝突
+	VehicleDeliveryPriceMaxInvalid          = 400_07_011 // 取還車服務費上限不可小於0
 
 	// 訂單
 	VehicleOrderTimeOverlap                          = 400_10_002 // 車輛訂單時間重疊
