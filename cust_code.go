@@ -76,8 +76,8 @@ const (
 	IdentificationHasInvalidExpiredDate                            = 400_11_004 // 證件有效日期格式錯誤
 	IdentificationHasInvalidIDNumber                               = 400_11_005 // 證件編號格式錯誤
 	IdentificationUploadIsNotAllowedWhileUnfulfilledOrderUndergoes = 400_11_006 // 有未完成訂單時，不可上傳證件
-	MustUploadDrivingLicenseForResidentCertificateUser             = 400_11_010 // 居留證用戶需上傳駕照
 	IdentificationAddressIsGovernmentOffice                        = 400_11_007 // 身分證或居留證地址為政府機關
+	MustUploadDrivingLicenseForResidentCertificateUser             = 400_11_010 // 居留證用戶需上傳駕照
 
 	//ETC
 	ETCLoginFailure            = 400_12_001 // 遠通ETC登入失敗
