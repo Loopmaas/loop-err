@@ -77,6 +77,7 @@ const (
 	IdentificationHasInvalidIDNumber                               = 400_11_005 // 證件編號格式錯誤
 	IdentificationUploadIsNotAllowedWhileUnfulfilledOrderUndergoes = 400_11_006 // 有未完成訂單時，不可上傳證件
 	IdentificationAddressIsGovernmentOffice                        = 400_11_007 // 身分證或居留證地址為政府機關
+	IdentificationRetryUpload                                      = 400_11_011 // 資料擷取失敗，請重新拍照並上傳
 	MustUploadDrivingLicenseForResidentCertificateUser             = 400_11_010 // 居留證用戶需上傳駕照
 
 	//ETC
