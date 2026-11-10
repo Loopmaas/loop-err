@@ -111,6 +111,11 @@ const (
 	Conflict               = 409_00_00  // 衝突
 	PaymentProcessConflict = 409_14_001 // 該訂單的付款工作已被其他進程捕獲
 
+	// Customer
+	MobileAlreadyValidated   = 409_01_001 // 用戶手機已通過驗證
+	MobileBoundByOther       = 409_01_002 // 門號已被其他帳號驗證
+	MobileAlreadyUnvalidated = 409_01_003 // 用戶手機驗證已清除
+
 	// Content
 	ContentVersionConflict = 409_09_001 // 內容版本衝突（提交的 version 與現況不符，需重新載入）
 
