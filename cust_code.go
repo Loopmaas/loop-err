@@ -95,7 +95,7 @@ const (
 	RepairCannotRating            = 400_13_004 // 有車損不能評價
 
 	// 駕駛資格驗證
-	NoTaiwanID = 400_14_001 // 沒有台灣身份編號，拋棄該不當請求
+	NoTaiwanIDWhenQualification = 400_14_001 // 沒有台灣身份編號，拋棄該不當請求
 
 	// 401 status code from here
 	Unauthorized = 401_00_00 // 未授權
